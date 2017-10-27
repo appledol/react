@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: violet;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+form {
+  margin:20px auto;
+}
+table {
+  border-collapse: collapse;
+  margin:30px auto;
+}
+table tr td {
+  border: 1px dotted black;
+  padding: 5px 10px;
+  text-align: left;
+
+}
+
+table tr:nth-child(1) td {
+    position: relative;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  border: 5px solid transparent;
+  border-top:5px solid black;
+}
+button:active {
+  border: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+table tr:active{
+  background: #cccccc;
+}
+
+textarea {
+  width: 300px;
+  height: 120px;
+  text-align: left;
+}
+
+.bottom-div {
+  width: auto;
+  padding:  30px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #cccccc;
+}
+.detail-info {
+    text-align: left;
+    width: 615px;
+    margin: 30px auto;
+}
+.pagination {
+  text-align: center;
+}
+#page-numbers {
+  list-style: none;
+}
+
+#page-numbers > li {
+  display: inline;
+  margin-right: 0.3em;
+  color: blue;
+  user-select: none;
+  cursor: pointer;
+  color: #000000;
+  margin-right: 10px;
+}
+
+#page-numbers > li:active {
+  color: #cccccc;
+}
+
+.loader {
+  margin: auto;
+  position: absolute;
+  top: 50vh;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -60px;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.icon-up:before {
+    content: "\25B2";
+}
+
+.icon-down:before {
+    content: "\25BC";
+}
