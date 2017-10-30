@@ -58,12 +58,13 @@ class App extends Component {
         });
   }
 
-  onSearchPressed() {
+onSearchPressed() {
     this.setState({
-      searchPressed: this.state.searchValue
+      searchPressed: this.state.searchValue,
+   currentPage: 1
     });
   }
-
+  
   updateSearchValue(evt) {
     this.setState({
       searchValue: evt.target.value
@@ -222,7 +223,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <form onKeyPress={this.onKeyPress}>
+        <form >
           <input type="text"  name="searchValue"  defaultValue={this.state.searchValue}  onChange={this.updateSearchValue.bind(this)}/>
           <input type="button"  name="searchButton" value="Search" onClick={this.onSearchPressed.bind(this)}/>
         </form>
